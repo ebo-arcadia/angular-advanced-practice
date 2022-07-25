@@ -6,7 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-  name: string = "Leon";
+  name: string = "";
   @Input() counter = 0;
   @Output() counterChange = new EventEmitter<number>();
 
@@ -17,6 +17,11 @@ export class CounterComponent implements OnInit {
 
   increment() {
     this.counter++;
+    this.counterChange.emit(this.counter)
+  }
+
+  decrement() {
+    this.counter--;
     this.counterChange.emit(this.counter)
   }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'advanced-sizer',
+  selector: 'set-sizer',
   templateUrl: './sizer.component.html',
   styleUrls: ['./sizer.component.css']
 })

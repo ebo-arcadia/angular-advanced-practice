@@ -9,13 +9,17 @@ import { FormsModule } from '@angular/forms';
 import { CounterComponent } from './counter/counter.component';
 import { SizerComponent } from './sizer/sizer.component';
 import { ChangeSizeComponent } from './change-size/change-size.component';
+import { BuyerComponent } from './buyer/buyer.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
     SizerComponent,
-    ChangeSizeComponent
+    ChangeSizeComponent,
+    BuyerComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
