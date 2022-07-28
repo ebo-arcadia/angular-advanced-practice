@@ -1,0 +1,10 @@
+<h2>Time to make decisions!</h2>
+<h3>Important: {{important}}</h3>
+<h3>Not important: {{not_important}}</h3>
+
+<list-decisions *ngFor="let decision of decisions"
+[decision]="decision"
+(decided)="finallyDecided($event)"
+>
+
+</list-decisions>

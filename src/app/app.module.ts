@@ -11,6 +11,8 @@ import { SizerComponent } from './sizer/sizer.component';
 import { ChangeSizeComponent } from './change-size/change-size.component';
 import { BuyerComponent } from './e-commerce/buyer.component';
 import { ProductComponent } from './product/product.component';
+import { DecisionsComponent } from './decisions/decisions.component';
+import { DecisionsEvaluatorComponent } from './decisions-evaluator/decisions-evaluator.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ProductComponent } from './product/product.component';
     SizerComponent,
     ChangeSizeComponent,
     BuyerComponent,
-    ProductComponent
+    ProductComponent,
+    DecisionsComponent,
+    DecisionsEvaluatorComponent
   ],
   imports: [
     BrowserModule,
