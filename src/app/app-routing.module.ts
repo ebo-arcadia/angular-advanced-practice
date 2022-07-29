@@ -5,6 +5,7 @@ import { ChangeSizeComponent } from './change-size/change-size.component';
 import { BuyerComponent } from './e-commerce/buyer.component';
 import { DecisionsEvaluatorComponent } from './decisions-evaluator/decisions-evaluator.component';
 import { CountDownParentComponent } from './count-down-parent/count-down-parent.component';
+import { TimerParentViewChildComponent } from './timer-parent-view-child/timer-parent-view-child.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: 'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: "eCommerce", component: BuyerComponent},
   { path: "decision-evaluate", component: DecisionsEvaluatorComponent},
   { path: "timer", component: CountDownParentComponent},
+  { path: "timer-view-child", component: TimerParentViewChildComponent},
 ];
 
 @NgModule({
