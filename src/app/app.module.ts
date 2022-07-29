@@ -13,6 +13,8 @@ import { BuyerComponent } from './e-commerce/buyer.component';
 import { ProductComponent } from './product/product.component';
 import { DecisionsComponent } from './decisions/decisions.component';
 import { DecisionsEvaluatorComponent } from './decisions-evaluator/decisions-evaluator.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
+import { CountDownParentComponent } from './count-down-parent/count-down-parent.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { DecisionsEvaluatorComponent } from './decisions-evaluator/decisions-eva
     BuyerComponent,
     ProductComponent,
     DecisionsComponent,
-    DecisionsEvaluatorComponent
+    DecisionsEvaluatorComponent,
+    CountdownTimerComponent,
+    CountDownParentComponent
   ],
   imports: [
     BrowserModule,
