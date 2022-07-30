@@ -16,6 +16,8 @@ import { DecisionsEvaluatorComponent } from './decisions-evaluator/decisions-eva
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { CountDownParentComponent } from './count-down-parent/count-down-parent.component';
 import { TimerParentViewChildComponent } from './timer-parent-view-child/timer-parent-view-child.component';
+import { TasksListComponent } from './tasks-list/tasks-list.component';
+import { TasksItemsComponent } from './tasks-items/tasks-items.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { TimerParentViewChildComponent } from './timer-parent-view-child/timer-p
     DecisionsEvaluatorComponent,
     CountdownTimerComponent,
     CountDownParentComponent,
-    TimerParentViewChildComponent
+    TimerParentViewChildComponent,
+    TasksListComponent,
+    TasksItemsComponent
   ],
   imports: [
     BrowserModule,
