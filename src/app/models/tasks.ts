@@ -1,16 +1,13 @@
-export interface Task {
-    taskItem: string;
-    taskPriority: string;
+export class Task {
+    taskID: number | any;
+    taskName: string | any;
+    taskPriority: string | any;
+    taskStatus: string | any;
+
+    constructor() {
+        this.taskID = 1;
+        this.taskName = "code in angular";
+        this.taskPriority = "high";
+        this.taskStatus = "active";
+    }
 }
-
-export const taskItems = [
-    {taskItem: 'write code in angular'},
-    {taskItem: 'read scripture'},
-    {taskItem: 'swim for 30 minutes'},
-]
-
-export const taskPriorities = [
-    {taskPriority: "high"},
-    {taskPriority: "medium"},
-    {taskPriority: "low"}
-]

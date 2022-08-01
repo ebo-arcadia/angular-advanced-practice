@@ -1,4 +1,5 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Task } from '../models/tasks';
 
 @Component({
   selector: 'tasks-items',
@@ -8,6 +9,10 @@ import { Component, OnInit, Input} from '@angular/core';
 export class TasksItemsComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {}
-  @Input() taskItem!: string | any;
+  task = Task;
+
+  @Input() taskId!: number | any;
+  @Input() taskName!: string | any;
   @Input() taskPriority!: string | any;
+  @Input() taskStatus!: string | any;
 }
