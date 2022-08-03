@@ -1,5 +1,6 @@
 import { Component, AfterViewInit, ViewChildren, QueryList } from '@angular/core';
 import { TasksItemsComponent } from '../tasks-items/tasks-items.component';
+import { Tasks } from '../models/tasks';
 
 @Component({
   selector: 'tasks-list',
@@ -7,10 +8,11 @@ import { TasksItemsComponent } from '../tasks-items/tasks-items.component';
   styleUrls: ['./tasks-list.component.css']
 })
 export class TasksListComponent implements AfterViewInit {
-  taskName: string | any;
-  @ViewChildren(TasksItemsComponent) tasks: QueryList<TasksItemsComponent> | any = null;
+  tasks = Tasks
+
+  @ViewChildren(TasksItemsComponent) taskList: QueryList<TasksItemsComponent> | any = null;
 
   ngAfterViewInit() {
-    this.tasks.forEach((task: any) => console.log(task))
+    this.taskList.forEach((task: any) => console.log(task))
   }
 }

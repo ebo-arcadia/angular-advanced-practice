@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Task } from '../models/tasks';
 
 @Component({
   selector: 'tasks-items',
@@ -9,7 +8,6 @@ import { Task } from '../models/tasks';
 export class TasksItemsComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {}
-  task = Task;
 
   @Input() taskId!: number | any;
   @Input() taskName!: string | any;

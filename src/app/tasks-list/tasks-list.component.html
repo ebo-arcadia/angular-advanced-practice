@@ -1,7 +1,14 @@
-<tasks-items [taskName]="taskName"></tasks-items>
-<tasks-items [taskName]="taskName"></tasks-items>
-<!-- <tasks-items [taskName]="taskName"></tasks-items>
-<tasks-items [taskName]="taskName"></tasks-items>
-<tasks-items [taskName]="taskName"></tasks-items> -->
+<tasks-items 
+    [taskId]="tasks[0]['taskId']" 
+    [taskName]="tasks[0]['taskName']" 
+    [taskPriority]="tasks[0]['taskPriority']"
+    [taskStatus]="tasks[0]['taskStatus']">
+</tasks-items>
+<tasks-items 
+    [taskId]="tasks[1]['taskId']" 
+    [taskName]="tasks[1]['taskName']" 
+    [taskPriority]="tasks[1]['taskPriority']"
+    [taskStatus]="tasks[1]['taskStatus']">
+</tasks-items>
 
 
