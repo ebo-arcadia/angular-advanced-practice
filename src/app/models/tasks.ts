@@ -11,4 +11,10 @@ export const Tasks = [
     "taskPriority": "medium",
     "taskStatus": "active",
 },
+{
+    "taskId": 10,
+    "taskName": "visit family in the UK",
+    "taskPriority": "high",
+    "taskStatus": "inactive",
+},
 ]

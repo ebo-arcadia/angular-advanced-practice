@@ -18,6 +18,8 @@ import { CountDownParentComponent } from './count-down-parent/count-down-parent.
 import { TimerParentViewChildComponent } from './timer-parent-view-child/timer-parent-view-child.component';
 import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { TasksItemsComponent } from './tasks-items/tasks-items.component';
+import { ReaderComponent } from './reader/reader.component';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { TasksItemsComponent } from './tasks-items/tasks-items.component';
     CountDownParentComponent,
     TimerParentViewChildComponent,
     TasksListComponent,
-    TasksItemsComponent
+    TasksItemsComponent,
+    ReaderComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
