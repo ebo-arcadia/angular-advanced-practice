@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BooksService } from '../service/books.service';
 
 @Component({
   selector: 'reader-books',
@@ -6,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reader.component.css']
 })
 export class ReaderComponent implements OnInit {
+  constructor(public booksService: BooksService) { }
+  ngOnInit(): void {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  onHideShowDetails(event: any) {this.booksService.toggleDetails}
 }
