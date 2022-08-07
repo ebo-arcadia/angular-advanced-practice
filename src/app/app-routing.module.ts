@@ -8,6 +8,7 @@ import { CountDownParentComponent } from './count-down-parent/count-down-parent.
 import { TimerParentViewChildComponent } from './timer-parent-view-child/timer-parent-view-child.component';
 import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { ReaderComponent } from './reader/reader.component';
+import { MessageReceiverComponent } from './message-receiver/message-receiver.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: 'full'},
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: "timer-view-child", component: TimerParentViewChildComponent},
   { path: "tasks", component: TasksListComponent},
   { path: "reader-books", component: ReaderComponent},
+  { path: "message-receiver", component: MessageReceiverComponent},
 ];
 
 @NgModule({

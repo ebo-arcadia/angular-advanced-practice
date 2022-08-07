@@ -20,6 +20,8 @@ import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { TasksItemsComponent } from './tasks-items/tasks-items.component';
 import { ReaderComponent } from './reader/reader.component';
 import { BooksComponent } from './books/books.component';
+import { MessageReceiverComponent } from './message-receiver/message-receiver.component';
+import { MessageSenderComponent } from './message-sender/message-sender.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { BooksComponent } from './books/books.component';
     TasksListComponent,
     TasksItemsComponent,
     ReaderComponent,
-    BooksComponent
+    BooksComponent,
+    MessageReceiverComponent,
+    MessageSenderComponent
   ],
   imports: [
     BrowserModule,

@@ -11,3 +11,5 @@
 ### implement parent-child components communication with @viewChildren() technique 
 
 ### as a developer, I want to build a feature facilitate communication between a child and a parent component using a service class as a directive
+
+### as a developer, I want to implement communication among components using observables and observers
