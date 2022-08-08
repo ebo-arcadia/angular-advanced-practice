@@ -23,6 +23,7 @@ import { BooksComponent } from './books/books.component';
 import { MessageReceiverComponent } from './message-receiver/message-receiver.component';
 import { MessageSenderComponent } from './message-sender/message-sender.component';
 import { GarbageCollectorComponent } from './garbage-collector/garbage-collector.component';
+import { LikedComponent } from './liked/liked.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { GarbageCollectorComponent } from './garbage-collector/garbage-collector
     BooksComponent,
     MessageReceiverComponent,
     MessageSenderComponent,
-    GarbageCollectorComponent
+    GarbageCollectorComponent,
+    LikedComponent
   ],
   imports: [
     BrowserModule,

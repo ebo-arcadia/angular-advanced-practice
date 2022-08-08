@@ -15,3 +15,5 @@
 ### as a developer, I want to implement communication among components using observables and observers
 
 ### as a developer, I want to create an box to store items every time when user add something using RxJS behavior subject
+
+### as a developer, I want to pass view content from the parent component to the child component using ng-content and component selector
