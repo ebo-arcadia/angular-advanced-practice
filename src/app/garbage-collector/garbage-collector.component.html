@@ -1,0 +1,13 @@
+<h4>Collect your garbage using Behavior Subject</h4>
+<p>Go ahead add whatever garbage you want!</p>
+
+<input type="text" [(ngModel)]="trashItem" size="15"/>
+
+<button class="btn btn-primary" (click)="add_to_bin()">Add it to the bin</button>
+<button class="btn btn-warning" (click)="remove_from_bin()">remove it from the bin</button>
+
+<ul>
+    <li *ngFor="let trash of (bin | async)">
+        {{ trash.trashItem }}
+    </li>
+</ul>

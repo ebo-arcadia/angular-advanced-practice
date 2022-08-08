@@ -22,6 +22,7 @@ import { ReaderComponent } from './reader/reader.component';
 import { BooksComponent } from './books/books.component';
 import { MessageReceiverComponent } from './message-receiver/message-receiver.component';
 import { MessageSenderComponent } from './message-sender/message-sender.component';
+import { GarbageCollectorComponent } from './garbage-collector/garbage-collector.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MessageSenderComponent } from './message-sender/message-sender.componen
     ReaderComponent,
     BooksComponent,
     MessageReceiverComponent,
-    MessageSenderComponent
+    MessageSenderComponent,
+    GarbageCollectorComponent
   ],
   imports: [
     BrowserModule,

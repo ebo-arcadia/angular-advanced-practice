@@ -9,6 +9,7 @@ import { TimerParentViewChildComponent } from './timer-parent-view-child/timer-p
 import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { ReaderComponent } from './reader/reader.component';
 import { MessageReceiverComponent } from './message-receiver/message-receiver.component';
+import { GarbageCollectorComponent } from './garbage-collector/garbage-collector.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: 'full'},
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: "tasks", component: TasksListComponent},
   { path: "reader-books", component: ReaderComponent},
   { path: "message-receiver", component: MessageReceiverComponent},
+  { path: "garbage-collector", component: GarbageCollectorComponent}
 ];
 
 @NgModule({
