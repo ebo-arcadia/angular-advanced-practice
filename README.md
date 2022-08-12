@@ -17,3 +17,8 @@
 ### as a developer, I want to create an box to store items every time when user add something using RxJS behavior subject
 
 ### as a developer, I want to pass view content from the parent component to the child component using ng-content and component selector
+
+### as a user, I want to have a 'select all' box when select will select all the likes boxes for all books. As a developer, I want to implement this feature using @viewChildren for reader(parent) and likes components (grandchild) communication and @ContentChild for books(child) and likes components communication; as a developer, I use want to implement the same feature using @ContentChild when multiple grand child instances are passed to the child component
+
+
+### as a developer, I want to implement ElementRef so that component can use nromal HTML elements instead of other components

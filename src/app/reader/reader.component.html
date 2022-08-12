@@ -1,8 +1,20 @@
 <button class="btn btn-warning" (click)="onHideShowDetails($event)">Hide/Show</button>
+<br>
+<label for="isAllLiked">Like all books!</label>
+<input type="checkbox" value="true" name="isAllLiked" id="isAllLiked" [(ngModel)]="isAllLiked" (change)="isAllLikedChange($event)"/>
+<books-reader #books>
+    <liked-checkbox #likeBox></liked-checkbox>
+</books-reader>
+<books-reader #books>
+    <liked-checkbox #likeBox></liked-checkbox>
+    <liked-checkbox #likeBox></liked-checkbox>
+    <liked-checkbox #likeBox></liked-checkbox>
+    <liked-checkbox #likeBox></liked-checkbox>
+</books-reader>
 <books-reader>
     <liked-checkbox></liked-checkbox>
 </books-reader>
 <books-reader>
-    <liked-checkbox></liked-checkbox>
+  
 </books-reader>
 

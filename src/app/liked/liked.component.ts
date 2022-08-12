@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./liked.component.css']
 })
 export class LikedComponent implements OnInit {
-  isChecked: boolean =false;
+  liked: boolean = false;
+  disliked: boolean = false;
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
+  like() { this.liked = true; }
+  undolike() { this.liked = false; }
 }
