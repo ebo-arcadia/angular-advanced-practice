@@ -24,6 +24,7 @@ import { MessageReceiverComponent } from './message-receiver/message-receiver.co
 import { MessageSenderComponent } from './message-sender/message-sender.component';
 import { GarbageCollectorComponent } from './garbage-collector/garbage-collector.component';
 import { LikedComponent } from './liked/liked.component';
+import { DOMManipulatorComponent } from './dom-manipulator/dom-manipulator.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { LikedComponent } from './liked/liked.component';
     MessageReceiverComponent,
     MessageSenderComponent,
     GarbageCollectorComponent,
-    LikedComponent
+    LikedComponent,
+    DOMManipulatorComponent
   ],
   imports: [
     BrowserModule,

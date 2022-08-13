@@ -21,4 +21,4 @@
 ### as a user, I want to have a 'select all' box when select will select all the likes boxes for all books. As a developer, I want to implement this feature using @viewChildren for reader(parent) and likes components (grandchild) communication and @ContentChild for books(child) and likes components communication; as a developer, I use want to implement the same feature using @ContentChild when multiple grand child instances are passed to the child component
 
 
-### as a developer, I want to implement ElementRef so that component can use nromal HTML elements instead of other components
+### as a developer, I want to implement ElementRef so that component can use plain HTML elements instead of other components

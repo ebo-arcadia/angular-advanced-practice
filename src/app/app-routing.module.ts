@@ -10,6 +10,7 @@ import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { ReaderComponent } from './reader/reader.component';
 import { MessageReceiverComponent } from './message-receiver/message-receiver.component';
 import { GarbageCollectorComponent } from './garbage-collector/garbage-collector.component';
+import { DOMManipulatorComponent } from './dom-manipulator/dom-manipulator.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: 'full'},
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: "tasks", component: TasksListComponent},
   { path: "reader-books", component: ReaderComponent},
   { path: "message-receiver", component: MessageReceiverComponent},
-  { path: "garbage-collector", component: GarbageCollectorComponent}
+  { path: "garbage-collector", component: GarbageCollectorComponent},
+  { path: "dom-manipulator", component: DOMManipulatorComponent}
 ];
 
 @NgModule({
