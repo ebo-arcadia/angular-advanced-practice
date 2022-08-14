@@ -22,3 +22,5 @@
 
 
 ### as a developer, I want to implement ElementRef so that component can use plain HTML elements instead of other components
+
+### as a developer, I want to use Gulp library to automate ng build process with code changes. when Gulp is up and running, whenever there is a code change saved, it will automatically copy that file and paste it in the same file in the destination file

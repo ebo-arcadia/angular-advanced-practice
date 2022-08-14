@@ -13,10 +13,9 @@ interface Bin {
 export class GarbageCollectorComponent {
   trashItem: string | any;
   id: string | any;
-
   bin: BehaviorSubject<Bin[]> = new BehaviorSubject<Bin[]>([]);
 
-  constructor() { this.bin.next([]) };
+  constructor() { this.bin.next([]); }
   
   add_to_bin() {
     const currentTrashItem = this.bin.getValue();
