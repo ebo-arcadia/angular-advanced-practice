@@ -23,4 +23,16 @@
 
 ### as a developer, I want to implement ElementRef so that component can use plain HTML elements instead of other components
 
-### as a developer, I want to use Gulp library to automate ng build process with code changes. when Gulp is up and running, whenever there is a code change saved, it will automatically copy that file and paste it in the same file in the destination file
+### as a developer, I want to use Gulp library and ng build --watch command to automate ng build process with code changes. when Gulp is up and running, whenever there is a code change saved, it will automatically copy that file and paste it in the same file in the destination file
+
+### as a developer, I want to understand life cycle hooks in angular, what is the use case for each cycle interfaces, how to implement hook method, when to implement, and why use each, which ones are implemented automatically and which ones are not
+
+### as a developer, I want to implement
+- ngOnChanges()
+- ngOnInit()
+- ngDoCheck()
+- ngAfterContentInit()
+- ngAfterContentChecked()
+- ngAfterViewInit()
+- ngAfterViewChecked()
+- ngOnDestroy()
