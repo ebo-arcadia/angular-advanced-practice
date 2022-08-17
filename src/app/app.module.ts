@@ -25,6 +25,8 @@ import { MessageSenderComponent } from './message-sender/message-sender.componen
 import { GarbageCollectorComponent } from './garbage-collector/garbage-collector.component';
 import { LikedComponent } from './liked/liked.component';
 import { DOMManipulatorComponent } from './dom-manipulator/dom-manipulator.component';
+import { AllLifecycleHooksComponent } from './all-lifecycle-hooks/all-lifecycle-hooks.component';
+import { AllLifecycleHooksDirective } from './all-lifecycle-hooks/all-lifecycle-hooks.directive';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { DOMManipulatorComponent } from './dom-manipulator/dom-manipulator.compo
     MessageSenderComponent,
     GarbageCollectorComponent,
     LikedComponent,
-    DOMManipulatorComponent
+    DOMManipulatorComponent,
+    AllLifecycleHooksComponent,
+    AllLifecycleHooksDirective
   ],
   imports: [
     BrowserModule,
