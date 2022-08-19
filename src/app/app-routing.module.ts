@@ -11,6 +11,7 @@ import { ReaderComponent } from './reader/reader.component';
 import { MessageReceiverComponent } from './message-receiver/message-receiver.component';
 import { GarbageCollectorComponent } from './garbage-collector/garbage-collector.component';
 import { DOMManipulatorComponent } from './dom-manipulator/dom-manipulator.component';
+import { AllLifecycleHooksParentComponent } from './all-lifecycle-hooks-parent/all-lifecycle-hooks-parent.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: 'full'},
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: "reader-books", component: ReaderComponent},
   { path: "message-receiver", component: MessageReceiverComponent},
   { path: "garbage-collector", component: GarbageCollectorComponent},
-  { path: "dom-manipulator", component: DOMManipulatorComponent}
+  { path: "dom-manipulator", component: DOMManipulatorComponent},
+  { path: "all-lifecycle-hooks", component: AllLifecycleHooksParentComponent}
 ];
 
 @NgModule({

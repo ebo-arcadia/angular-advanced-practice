@@ -52,21 +52,21 @@ export class AllLifecycleHooksComponent extends AllLifecycleHooksDirective imple
 
       // Beware! Called frequently!
   // Called in every change detection cycle anywhere on the page
-  ngDoCheck() { this.logIt('DoCheck'); }
+  ngDoCheck() { this.logIt('DoCheck cycle triggered'); }
 
-  ngAfterContentInit() { this.logIt('AfterContentInit');  }
-
-  // Beware! Called frequently!
-  // Called in every change detection cycle anywhere on the page
-  ngAfterContentChecked() { this.logIt('AfterContentChecked'); }
-
-  ngAfterViewInit() { this.logIt('AfterViewInit'); }
+  ngAfterContentInit() { this.logIt('AfterContentInit triggered');  }
 
   // Beware! Called frequently!
   // Called in every change detection cycle anywhere on the page
-  ngAfterViewChecked() { this.logIt('AfterViewChecked'); }
+  ngAfterContentChecked() { this.logIt('AfterContentChecked triggered'); }
 
-  ngOnDestroy() { this.logIt('OnDestroy'); }
+  ngAfterViewInit() { this.logIt('AfterViewInit triggered'); }
+
+  // Beware! Called frequently!
+  // Called in every change detection cycle anywhere on the page
+  ngAfterViewChecked() { this.logIt('AfterViewChecked triggered'); }
+
+  ngOnDestroy() { this.logIt('OnDestroy triggered'); }
 }
 
 

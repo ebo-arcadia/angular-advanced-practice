@@ -27,6 +27,7 @@ import { LikedComponent } from './liked/liked.component';
 import { DOMManipulatorComponent } from './dom-manipulator/dom-manipulator.component';
 import { AllLifecycleHooksComponent } from './all-lifecycle-hooks/all-lifecycle-hooks.component';
 import { AllLifecycleHooksDirective } from './all-lifecycle-hooks/all-lifecycle-hooks.directive';
+import { AllLifecycleHooksParentComponent } from './all-lifecycle-hooks-parent/all-lifecycle-hooks-parent.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { AllLifecycleHooksDirective } from './all-lifecycle-hooks/all-lifecycle-
     LikedComponent,
     DOMManipulatorComponent,
     AllLifecycleHooksComponent,
-    AllLifecycleHooksDirective
+    AllLifecycleHooksDirective,
+    AllLifecycleHooksParentComponent
   ],
   imports: [
     BrowserModule,

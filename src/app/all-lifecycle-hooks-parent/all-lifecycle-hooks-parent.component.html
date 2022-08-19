@@ -1,0 +1,11 @@
+<div class="parent">
+    <h2>All lifecycle hooks</h2>
+
+    <button type="button" (click)="toggleChild()">
+        {{hasChild ? 'Destroy' : 'Create'}} AllLifecycleHooksComponent
+    </button>
+
+    <h3>Lifecycle Hook Log</h3>
+    <div *ngFor="let msg of hookLog" class="log">{{msg}}</div>
+    
+</div>
