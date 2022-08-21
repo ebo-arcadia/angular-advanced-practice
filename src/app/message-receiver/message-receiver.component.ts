@@ -16,8 +16,9 @@ export class MessageReceiverComponent implements OnDestroy {
     this.subscription = this.messageService.getMessage().subscribe(message => { this.message = message });
   }
 
-  ngOnDestroy(): void {
+  ngOnDestroy() {
       // unsubscribe to ensure no memory leaks
+      console.log("-----ng on destory is triggered---!! kill the instance!!")
       this.subscription.unsubscribe();
   }
 }

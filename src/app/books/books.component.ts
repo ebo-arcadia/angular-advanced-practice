@@ -1,4 +1,4 @@
-import { Component, ContentChild, ContentChildren, OnInit, QueryList } from '@angular/core';
+import { Component, ContentChild, ContentChildren, OnInit, QueryList, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, ViewChild, ElementRef, OnDestroy} from '@angular/core';
 import { LikedComponent } from '../liked/liked.component';
 import { BooksService } from '../service/books.service';
 
@@ -7,7 +7,7 @@ import { BooksService } from '../service/books.service';
   templateUrl: './books.component.html',
   styleUrls: ['./books.component.css']
 })
-export class BooksComponent implements OnInit {
+export class BooksComponent implements OnInit, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
   constructor(public booksService: BooksService) { }
   ngOnInit(): void {}
 
@@ -29,4 +29,11 @@ export class BooksComponent implements OnInit {
     else { 
       for (let i = 0; i < likedCompInstance.length; i++) {likedCompInstance[i].undolike()};}
   }
+
+  @ViewChild("table") table: ElementRef | any
+  ngAfterContentInit() {console.log(this.likedCompInstance.toArray())}
+  ngAfterContentChecked(): void {console.log("---ng after content checked is invoked---!!!")}
+  ngAfterViewInit(): void {console.log(this.table)}
+  ngAfterViewChecked(): void {"----ng after view checked is triggered-----!!!"}
+  ngOnDestroy(): void {"---ng on destory is triggered----!!"}
 }
