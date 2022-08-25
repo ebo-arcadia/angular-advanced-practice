@@ -1,0 +1,10 @@
+var ticketNumber = 100;
+var content = "I can only be string and nothing else!";
+var blackOrWhite = false;
+var objectLiterals = ["faith", "hope", "love"];
+var stringNum = '888';
+console.log(ticketNumber);
+console.log(content);
+console.log(blackOrWhite);
+console.log(objectLiterals);
+console.log(stringNum);
