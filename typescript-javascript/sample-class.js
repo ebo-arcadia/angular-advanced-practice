@@ -25,11 +25,13 @@ var SoftwareDeveloper = /** @class */ (function () {
 }());
 var developer_one;
 developer_one = new SoftwareDeveloper("application engineer 1", "developing software", ["python", "angular", "javascript", "java", "AWS"], "full-stack technologies and framework", 120000, true);
-console.log("obj: ", developer_one);
-console.log("title: ", developer_one.title);
-console.log("responsibility: ", developer_one.responsibility);
-console.log("expertise: ", developer_one.expertise);
-console.log("skills: ", developer_one.skills);
-console.log("is employed or not: ", developer_one.isEmployed);
-console.log("base salary: ", developer_one.basePay);
-console.log("get salary: ", developer_one.getNetSalary());
+var developer_two;
+developer_two = new SoftwareDeveloper("backend developer", "working with computer code", ["c#", "C--", "qSharp", "machine learning"], "backend", 280000, true);
+var developer_three;
+developer_three = new SoftwareDeveloper("cloud developer", "develop software in the cloud", ["tensorflow", "GitOps"], "cloud compute", 420000, true);
+var developers = [];
+developers.push(developer_one, developer_two, developer_three);
+for (var i = 0; i < developers.length; i++) {
+    console.info(developers[i]);
+    console.log("get title of each developer object: ", developers[i].title);
+}

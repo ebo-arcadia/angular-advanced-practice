@@ -29,12 +29,16 @@ class SoftwareDeveloper {
 
 var developer_one: SoftwareDeveloper;
 developer_one = new SoftwareDeveloper("application engineer 1", "developing software", ["python", "angular", "javascript", "java", "AWS"], "full-stack technologies and framework", 120_000, true);
+var developer_two: SoftwareDeveloper;
+developer_two = new SoftwareDeveloper("backend developer", "working with computer code", ["c#", "C--", "qSharp", "machine learning"], "backend", 280_000, true);
+var developer_three: SoftwareDeveloper;
+developer_three = new SoftwareDeveloper("cloud developer", "develop software in the cloud", ["tensorflow", "GitOps"], "cloud compute", 420_000, true);
 
-console.log("obj: ", developer_one)
-console.log("title: ", developer_one.title)
-console.log("responsibility: ", developer_one.responsibility)
-console.log("expertise: ", developer_one.expertise)
-console.log("skills: ", developer_one.skills)
-console.log("is employed or not: ", developer_one.isEmployed)
-console.log("base salary: ", developer_one.basePay)
-console.log("get salary: ", developer_one.getNetSalary())
+var developers: SoftwareDeveloper[] = [];
+developers.push(developer_one, developer_two, developer_three)
+
+for (let i = 0; i < developers.length; i ++) {
+    console.info(developers[i])
+    console.log("get title of each developer object: ", developers[i].title)
+}
+
