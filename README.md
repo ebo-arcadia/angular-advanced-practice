@@ -38,3 +38,6 @@
 - ngOnDestroy()
 
 ### as a developer, I want to convert a typescript file to a javascript file and read it using node.js
+### as a developer, I want to create a class with properties, methods, and then create objects from it
+### as a developer, I want to apply access modifiers to control access to a class from the outside
+### as a developer, I want to implement interface and use it to create a new class and object thereafter
