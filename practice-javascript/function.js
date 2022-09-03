@@ -95,3 +95,40 @@ let nested_function = function( parameter ) {
 // console.log("access local variable 1 outside the local function scope: ", local_var_1)
 
 nested_function("true")
+
+// call back function
+// a function that is called within another function
+// a function is a callback only when it is passed as an argument not invoked directly inside a function
+
+let intro = function(name, title) {
+    console.log(`My name is ${name}, and I am a ${title}`)
+}
+
+let prep = function(material) {
+    console.log(`${material} booklet can be found here`)
+}
+
+let present = function(name, title, subject, callbackFuncRef) {
+    callbackFuncRef(name, title);
+    console.log(`the subject I am going to present today is on ${subject}`);
+}
+
+console.info("------call back function-------");
+present("Scott", "machine learning expert", "qSharp", intro);
+
+let noProtectionCharge = function(totalParam) {
+    let total = totalParam
+    console.log("total charge without protection: ", total);
+};
+
+let withProtectionCharge = function(totalParam, protection) {
+    let total = totalParam + protection
+    console.log("total charge with protection: ", total);
+};
+
+let payment = function(total, protection, withOrWithoutFeeFunc) {
+    withOrWithoutFeeFunc(total, protection)
+};
+
+payment(100, 22, noProtectionCharge);
+payment(100, 22, withProtectionCharge);
