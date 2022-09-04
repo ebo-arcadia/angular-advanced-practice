@@ -132,3 +132,43 @@ let payment = function(total, protection, withOrWithoutFeeFunc) {
 
 payment(100, 22, noProtectionCharge);
 payment(100, 22, withProtectionCharge);
+
+
+// callback function 
+// a built-in function receives the reference of a function, invoke it after the completion of a certain time period only once
+
+let requestStart = function() {
+    console.info("request is sent. please wait...")
+}
+
+let requestProcess = function() {
+    console.warn("process request...")
+}
+
+let requestResult = function() {
+    console.info("request processed completed...")
+}
+
+requestStart()
+setTimeout(requestProcess, 3_000)
+setTimeout(requestResult, 4_000)
+
+// set interval
+// a built-in function receives a callback function, invoke it after the completion of a given period of time repeatedly
+
+let updateStockMarket = function() {
+    console.info("update stock market board starts...");
+};
+
+let updateStockMarketDaily = setInterval(updateStockMarket, 2_000);
+
+function stopUpdateStock() { clearInterval(updateStockMarketDaily) };
+
+function executeStopUpdate() { setTimeout(stopUpdateStock, 10*1000) };
+
+let completeStockUpdateProcess = function() {
+    executeStopUpdate();
+    console.log("update completed")
+}
+
+completeStockUpdateProcess()
