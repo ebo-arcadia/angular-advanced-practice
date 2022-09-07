@@ -84,3 +84,18 @@ if (developer.promote() == true) {
 else {
     console.info("You will be promoted in the near future!")
 };
+
+// adding properties and methods from outside of object
+
+var newHire = {};
+newHire.title = "SWE";
+newHire["salary"] = 100_000;
+newHire.tools = ["python", "javascript", "java", "swift3"]
+newHire.greeting = function(name) { return `My name is ${name} and I am a new SWE!`}
+console.info(newHire.title);
+console.info(newHire["tools"])
+console.info(newHire.salary)
+console.info(newHire.greeting("leon"));
+console.info(newHire);
+
+console.log("-----------")
