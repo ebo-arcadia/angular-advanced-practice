@@ -172,3 +172,40 @@ let completeStockUpdateProcess = function() {
 }
 
 completeStockUpdateProcess()
+
+// arrow function
+// alternative syntax to create a function
+console.info("------arrow function--------")
+ 
+var func1 = function() { console.info(this) };
+
+var func2 = () => { console.info(this) };
+
+
+this.globalAttr = "global attr"
+console.log("keyword this outside object: ", this.globalAttr);
+
+var traveler = {
+    travelerName: 'Darwin',
+    goTravel: function(destiny) { return `${this.travelerName} is traveling to ${destiny} soon!`},
+    getThis: function() { console.log(this)},
+    getThisTimeOut: function() { 
+        setTimeout(function()
+        { console.log(this) 
+            }, 3210);
+        }
+    };
+
+console.log("calling go travel directly")
+traveler.getThis();
+console.log("calling go travel indirectly with timeout")
+setTimeout(traveler.getThis.bind(traveler), 3000)
+console.log("getting this with timeout inside object")
+traveler.getThisTimeOut()
+
+// arrow functions automatic return
+
+let isEvenNum= (x) => x % 2 == 0;
+console.log("arrow function return is even num: ", isEvenNum(10))
+
+
