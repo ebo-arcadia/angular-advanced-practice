@@ -17,5 +17,10 @@ Count: {{ counter }}
 <br>
 <br>
 <h2>Welcome, {{name}}!</h2>
+<br>
+<br>
+<h3>the number below changes due to angular auto change detection: </h3>
+<p> {{num}} </p>
+<input type="button" value="refresh the number above!!!" (click)="refresh()" />
 
 

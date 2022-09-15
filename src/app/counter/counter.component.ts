@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, SimpleChange, SimpleChanges, OnChanges, DoCheck } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, SimpleChange, SimpleChanges, OnChanges, DoCheck, Inject, NgZone} from '@angular/core';
 
 @Component({
   selector: 'counter',
@@ -9,8 +9,18 @@ export class CounterComponent implements OnChanges, OnInit, DoCheck {
   name: string = "";
   @Input() counter = 1;
   @Output() counterChange = new EventEmitter<number>();
+  num: number = 0;
 
-  constructor() { }
+  constructor(@Inject(NgZone) private _componentZone: NgZone) {
+    this._componentZone.runOutsideAngular(( ) => {
+      setInterval(() => {
+        this.num = this.num + 1;
+        console.log(this.num);
+      }, 800)
+    })
+  }
+
+  refresh() {}
 
   ngOnInit(): void {
     console.log("------ngOnInit is called-----!!!")

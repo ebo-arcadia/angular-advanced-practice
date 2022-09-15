@@ -41,3 +41,5 @@
 ### as a developer, I want to create a class with properties, methods, and then create objects from it
 ### as a developer, I want to apply access modifiers to control access to a class from the outside
 ### as a developer, I want to implement interface and use it to create a new class and object thereafter
+### as a developer, I want to implement unit test in angular to test a component independently before it gets integrated to other components
+### as a developer, I want to optimize performance by using ng zone to execute function outside angular auto component update lifecycle
